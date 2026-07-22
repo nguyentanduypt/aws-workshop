@@ -6,120 +6,89 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# AWS AI Journey – Chia sẻ về Định hướng nghề nghiệp & Công nghệ Cloud
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+## Mục đích của sự kiện
 
-### Mục Đích Của Sự Kiện
+Sự kiện được tổ chức nhằm giúp học viên cập nhật các xu hướng công nghệ Cloud mới, học hỏi kinh nghiệm thực tế từ các chuyên gia và cựu học viên, đồng thời định hướng lộ trình phát triển nghề nghiệp trong lĩnh vực AWS Cloud. Bên cạnh đó, đây cũng là cơ hội để theo dõi vòng Chung kết cuộc thi Cloud Architect của chương trình First Cloud AI Journey và tìm hiểu về các giải pháp bảo mật mới trên nền tảng AWS.
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+## Diễn giả
 
-### Danh Sách Diễn Giả
+- Hai đội xuất sắc tham gia vòng Chung kết cuộc thi Cloud Architect – First Cloud AI Journey.
+- Anh **Nguyễn Tuấn Thịnh** – DevOps/Cloud Engineer.
+- Cựu sinh viên Trường Đại học Ngoại ngữ – Tin học TP.HCM (HUFLIT), hiện đang làm việc trong lĩnh vực Cloud Engineering.
+- Đội ngũ Admin của First Cloud AI Journey.
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+## Nội dung chính
 
-### Nội Dung Nổi Bật
+### 1. Chung kết cuộc thi Cloud Architect
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+Phần đầu của sự kiện là vòng chung kết giữa hai đội có thành tích xuất sắc nhất trong chương trình First Cloud AI Journey.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+Hai đội lần lượt trình bày giải pháp kiến trúc Cloud cho các bài toán thực tế, giải thích lý do lựa chọn các dịch vụ AWS cũng như cách xây dựng hệ thống đảm bảo khả năng mở rộng, tính sẵn sàng cao và tối ưu chi phí. Sau phần trình bày, ban giám khảo đưa ra nhiều nhận xét, góp ý về kiến trúc, khả năng vận hành cũng như cách thuyết trình để giúp các đội hoàn thiện giải pháp của mình.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+### 2. Giới thiệu AWS Security Agent
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+Anh Nguyễn Tuấn Thịnh chia sẻ về **AWS Security Agent**, một dịch vụ bảo mật mới của AWS được tích hợp trí tuệ nhân tạo (AI).
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+Buổi chia sẻ tập trung vào các tính năng nổi bật của dịch vụ như hỗ trợ phát hiện lỗ hổng bảo mật, phân tích rủi ro và đưa ra các khuyến nghị nhằm nâng cao mức độ an toàn của hệ thống. Bên cạnh những ưu điểm về khả năng tự động hóa, diễn giả cũng phân tích một số hạn chế, đặc biệt là chi phí triển khai còn khá cao nên chưa phù hợp với các dự án nhỏ hoặc cá nhân.
 
-#### Domain-Driven Design (DDD)
+### 3. Chia sẻ kinh nghiệm học tập và làm việc
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+Một cựu sinh viên HUFLIT đã chia sẻ hành trình phát triển từ khi còn là sinh viên đến khi trở thành Cloud Engineer.
 
-#### Event-Driven Architecture
+Nội dung xoay quanh quá trình học tập, xây dựng dự án cá nhân, chuẩn bị hồ sơ xin việc cũng như những khó khăn thường gặp trong giai đoạn mới đi làm. Những chia sẻ thực tế giúp người tham dự có thêm động lực và định hướng rõ ràng hơn cho quá trình học tập và phát triển nghề nghiệp.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+### 4. Định hướng học AWS
 
-#### Compute Evolution
+Đội ngũ Admin của First Cloud AI Journey giới thiệu lộ trình học AWS dành cho người mới bắt đầu.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+Buổi chia sẻ hướng dẫn những kiến thức nền tảng cần chuẩn bị trước khi học AWS, cách lựa chọn chứng chỉ phù hợp với từng mục tiêu nghề nghiệp, phương pháp ôn tập hiệu quả cũng như các tài liệu, khóa học và bài thực hành nên tham khảo. Ngoài ra, diễn giả cũng chỉ ra những sai lầm phổ biến khi tự học Cloud và cách khắc phục.
 
-#### Amazon Q Developer
+## Những kiến thức tiếp thu được
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+### Kiến trúc Cloud
 
-### Những Gì Học Được
+- Hiểu rõ hơn về cách thiết kế kiến trúc Cloud cân bằng giữa hiệu năng, khả năng mở rộng, tính sẵn sàng và chi phí.
+- Nhận thấy kỹ năng trình bày và bảo vệ giải pháp cũng quan trọng không kém kỹ năng kỹ thuật.
+- Học hỏi được nhiều kinh nghiệm thiết kế hệ thống thông qua các bài toán thực tế.
 
-#### Tư Duy Thiết Kế
+### Bảo mật Cloud
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- Hiểu vai trò ngày càng quan trọng của AI trong lĩnh vực bảo mật Cloud.
+- Biết thêm về AWS Security Agent và khả năng hỗ trợ phân tích, phát hiện lỗ hổng bảo mật.
+- Nhận thức được sự cần thiết của việc cân bằng giữa hiệu quả và chi phí khi lựa chọn các dịch vụ bảo mật.
 
-#### Kiến Trúc Kỹ Thuật
+### Định hướng nghề nghiệp
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- Việc học tập liên tục và thực hành trên các dự án thực tế là yếu tố quan trọng để phát triển nghề nghiệp.
+- Portfolio cùng với kinh nghiệm thực tế sẽ tạo nhiều lợi thế khi tìm kiếm việc làm.
+- Kỹ năng giao tiếp, làm việc nhóm và thuyết trình cũng là những kỹ năng cần được rèn luyện song song với chuyên môn.
 
-#### Chiến Lược Hiện Đại Hóa
+### Lộ trình học AWS
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- Việc học theo lộ trình rõ ràng sẽ giúp tiếp thu kiến thức hiệu quả hơn.
+- Thường xuyên thực hành các bài Lab giúp hiểu sâu và ghi nhớ lâu các dịch vụ AWS.
+- Quá trình chuẩn bị cho chứng chỉ AWS cần kết hợp giữa học lý thuyết và thực hành.
 
-### Ứng Dụng Vào Công Việc
+## Khả năng áp dụng vào thực tế
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+Sau sự kiện, em có thể vận dụng những kiến thức đã học để cải thiện kiến trúc AWS cho các dự án cá nhân, nghiên cứu sâu hơn về các giải pháp bảo mật sử dụng AI như AWS Security Agent, đồng thời tiếp tục xây dựng các dự án thực tế nhằm nâng cao kỹ năng chuyên môn. Bên cạnh đó, em cũng xây dựng kế hoạch học tập rõ ràng hơn để chuẩn bị cho các chứng chỉ AWS trong thời gian tới.
 
-### Trải nghiệm trong event
+## Cảm nhận sau sự kiện
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia sự kiện **"AWS AI Journey – Chia sẻ về Định hướng nghề nghiệp & Công nghệ Cloud"** đã mang lại cho em nhiều kiến thức thực tế về kiến trúc Cloud, bảo mật AWS cũng như định hướng nghề nghiệp trong lĩnh vực điện toán đám mây.
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+Điều em ấn tượng nhất là phần trình bày của hai đội thi Cloud Architect. Qua cách phân tích yêu cầu bài toán, lựa chọn dịch vụ AWS và giải thích kiến trúc hệ thống, em hiểu rõ hơn quy trình xây dựng một giải pháp Cloud hoàn chỉnh. Những góp ý từ ban giám khảo cũng giúp em nhận biết được các tiêu chí quan trọng khi thiết kế và đánh giá một hệ thống thực tế.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+Bên cạnh đó, phần giới thiệu về AWS Security Agent giúp em cập nhật thêm một công nghệ mới ứng dụng AI trong lĩnh vực bảo mật. Em hiểu rõ hơn những lợi ích cũng như các hạn chế của dịch vụ, từ đó có thêm góc nhìn về việc lựa chọn giải pháp phù hợp với từng quy mô dự án.
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+Đặc biệt, những chia sẻ của cựu sinh viên HUFLIT đã mang đến cho em nhiều động lực trong quá trình học tập. Em nhận thấy rằng việc chủ động học hỏi, xây dựng dự án cá nhân và không ngừng cập nhật công nghệ là những yếu tố quan trọng để phát triển sự nghiệp trong lĩnh vực Cloud.
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+## Bài học rút ra
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+- Một kiến trúc Cloud hiệu quả cần cân bằng giữa yêu cầu nghiệp vụ, hiệu năng, bảo mật và chi phí.
+- AI đang ngày càng đóng vai trò quan trọng trong việc hỗ trợ bảo mật hệ thống Cloud.
+- Học đi đôi với thực hành là phương pháp hiệu quả nhất để nâng cao kỹ năng chuyên môn.
+- Có lộ trình học tập rõ ràng sẽ giúp tiết kiệm thời gian và đạt được mục tiêu nghề nghiệp nhanh hơn.
+- Bên cạnh kiến thức kỹ thuật, kỹ năng giao tiếp, làm việc nhóm và trình bày giải pháp cũng là những yếu tố quan trọng đối với một Cloud Engineer.

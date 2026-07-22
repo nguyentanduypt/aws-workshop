@@ -1,9 +1,9 @@
 ---
-title : "Truy cập S3 từ VPC"
-date : 2024-01-01 
-weight : 3
-chapter : false
-pre : " <b> 5.3. </b> "
+title: "Tối ưu hạ tầng mạng"
+date: 2024-01-01
+weight: 3
+chapter: false
+pre: " <b> 5.3. </b> "
 ---
 
 #### Sử dụng Gateway endpoint
@@ -14,5 +14,5 @@ Trong phần này, bạn sẽ tạo một Gateway endpoint để truy cập Amaz
 
 #### Nội dung
 
-- [Tạo gateway endpoint](3.1-create-gwe/)
-- [Test gateway endpoint](3.2-test-gwe/)
+- [Cấu hình ALB và Internet Gateway](3.1-create-gwe/)
+- [Cấu hình VPC Gateway Endpoint cho S3](3.2-test-gwe/)

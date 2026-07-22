@@ -5,55 +5,25 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Triển khai hệ thống (Deploy) lên môi trường thực tế trên AWS.
+- Cấu hình quy trình CI/CD cơ bản để tự động hóa việc build và deploy khi có mã nguồn mới đẩy lên GitHub.
+- Vận hành hoàn chỉnh toàn bộ hệ thống (Frontend + Backend + Database + Cache) trên môi trường Cloud thật.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                      | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------- |
+| 2   | - Chuẩn bị cơ sở hạ tầng trên AWS (Cấu hình EC2 Instance, phân quyền Security Groups, kết nối Amazon RDS và ElastiCache).                      | 29/06/2026   | 29/06/2026      |                |
+| 3   | - Đưa các Docker Image đã được "container hóa" từ tuần trước lên môi trường AWS và tiến hành cấu hình biến môi trường (Environment Variables). | 30/06/2026   | 30/06/2026      |                |
+| 4   | - Nghiên cứu và cấu hình quy trình **CI/CD** để tự động hóa quá trình build và deploy khi có code mới cập nhật lên GitHub.                     | 01/07/2026   | 01/07/2026      |                |
+| 5   | - Kiểm tra, tinh chỉnh kết nối mạng giữa các thành phần trên Cloud (đảm bảo Frontend gọi được Backend, Backend kết nối tốt với RDS và Redis).  | 02/07/2026   | 02/07/2026      |                |
+| 6   | - Vận hành và kiểm thử toàn diện hệ thống ở trạng thái hoàn chỉnh (**Frontend + Backend + Database + Cache**) trên môi trường thật.            | 03/07/2026   | 03/07/2026      |                |
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Triển khai thành công ứng dụng E-commerce lên môi trường Cloud AWS, hệ thống hoạt động ổn định và có khả năng truy cập công khai từ bên ngoài.
+- Thiết lập thành công hệ thống tự động hóa **CI/CD** qua AWS CodePipeline, giúp tiết kiệm thời gian cập nhật mã nguồn lên server.
+- Hoàn thiện việc kết nối đồng bộ toàn bộ 4 thành phần cốt lõi (**Frontend, Backend, Database, Cache**) trên nền tảng đám mây.

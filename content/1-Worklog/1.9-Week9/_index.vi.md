@@ -5,55 +5,25 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Thiết kế sơ đồ kiến trúc AWS Diagram cho hệ thống website thương mại điện tử và hoàn thiện theo góp ý của mentor.
+- Tích hợp Redis vào dự án thực tập để tối ưu hóa hiệu năng và giảm tải cho cơ sở dữ liệu chính.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                              | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ---------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------- |
+| 2   | - Xây dựng bản thảo sơ đồ kiến trúc AWS Diagram tổng thể cho hệ thống E-commerce .                                     | 15/06/2026   | 15/06/2026      |                |
+| 3   | - Trình bày sơ đồ với anh chị mentor, tiếp thu ý kiến đóng góp và tiến hành chỉnh sửa, hoàn thiện sơ đồ kiến trúc AWS. | 16/06/2026   | 16/06/2026      |                |
+| 4   | - Viết code tích hợp **Redis** vào dự án Spring Boot để thực hiện cache dữ liệu danh mục sản phẩm .                    | 17/06/2026   | 17/06/2026      |                |
+| 5   | - Tích hợp Redis để cache dữ liệu thương hiệu (Brands) và danh sách sản phẩm (Products) thường xuyên truy cập.         | 18/06/2026   | 18/06/2026      |                |
+| 6   | - Trình bày lại sơ đồ với anh chị mentor sau khi được góp ý , hoàn thiện sơ đồ kiến trúc AWS.                          | 19/06/2026   | 19/06/2026      |                |
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thiện bản vẽ kiến trúc hệ thống trên AWS một cách chuẩn chỉnh và chuyên nghiệp theo đúng định hướng của mentor.
+- Tích hợp thành công **Redis** vào dự án Spring Boot:
+  - Giảm thiểu đáng kể thời gian truy vấn dữ liệu cho các thông tin ít thay đổi như danh mục, thương hiệu và sản phẩm.
+  - Giảm tải áp lực trực tiếp lên cơ sở dữ liệu (Database), giúp hệ thống vận hành mượt mà và ổn định hơn.

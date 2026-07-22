@@ -5,53 +5,28 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Learn about Amazon Elastic Block Store (EBS), EBS Snapshots, and Elastic IP.
+- Explore Amazon Relational Database Service (RDS) and automated backup solutions using AWS Backup.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Completed This Week:
 
+| Day       | Tasks                                                                                                                                                                                   | Start Date | Completion Date | Reference                                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ----------------------------------------- |
+| Monday    | - Study Amazon Elastic Block Store (EBS), including different volume types (gp2, gp3, io1, io2) and how to attach EBS volumes to Amazon EC2 instances.                                  | 11/05/2026 | 11/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| Tuesday   | - Learn how to create EBS Snapshots for data backup and understand the concept of Elastic IP for static public IP addresses.                                                            | 12/05/2026 | 12/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| Wednesday | - Study the fundamentals of Amazon Relational Database Service (RDS), including popular database engines such as PostgreSQL and MySQL, and learn how to configure database connections. | 13/05/2026 | 13/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| Thursday  | - Explore AWS Backup by creating Backup Plans and configuring automated backup policies for cloud resources.                                                                            | 14/05/2026 | 14/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| Friday    | - **Hands-on Lab:** Create an EBS volume, take an EBS Snapshot, associate an Elastic IP with an EC2 instance, and configure Amazon RDS with AWS Backup.                                 | 15/05/2026 | 15/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Developed a solid understanding of AWS storage and networking services:
+  - Learned how to use **Amazon Elastic Block Store (EBS)** to provide persistent block storage for Amazon EC2 instances.
+  - Gained hands-on experience creating **EBS Snapshots** to back up storage volumes and improve data protection.
+  - Successfully configured **Elastic IP** addresses to ensure stable public connectivity for EC2 instances after restarts.
+- Built foundational knowledge of cloud database management:
+  - Understood how to deploy and manage relational databases using **Amazon RDS**, separating the database layer from the application layer for better scalability and maintainability.
+  - Successfully configured automated backup schedules using **AWS Backup**, ensuring reliable data protection and disaster recovery before moving on to the project implementation phase.

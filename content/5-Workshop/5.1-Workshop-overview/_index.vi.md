@@ -1,19 +1,21 @@
 ---
-title : "Giới thiệu"
-date : 2024-01-01 
-weight : 1
-chapter : false
-pre : " <b> 5.1. </b> "
+title: "Giới thiệu"
+date: 2024-01-01
+weight: 1
+chapter: false
+pre: " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+#### Giới thiệu về VPC Endpoint trong kiến trúc Fashion E-commerce
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+- **Điểm cuối VPC (VPC endpoints)** là các thiết bị ảo. Chúng là các thành phần VPC có khả năng mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và các dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
+- Trong kiến trúc hệ thống **Fashion E-commerce Platform**, các tài nguyên điện toán (Spring Boot backend chạy trên EC2 instance trong Private Subnet) có thể truy cập an toàn vào **Amazon S3** (lưu trữ ảnh sản phẩm) bằng điểm cuối Gateway, và kết nối với các dịch vụ CI/CD qua Interface Endpoint (PrivateLink) mà hoàn toàn không cần sử dụng NAT Gateway tốn kém.
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+#### Tổng quan về Workshop
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+Trong workshop này, bạn sẽ tiến hành triển khai và kiểm thử các thành phần cốt lõi của hạ tầng thương mại điện tử thời trang:
+
+- **"VPC Cloud"**: Nơi chứa các tài nguyên trên cloud bao gồm máy chủ ứng dụng (EC2 trong Private Subnet), Application Load Balancer (ALB), và các VPC Endpoints giúp truyền tải dữ liệu nội bộ bảo mật, tối ưu chi phí.
+- **"Tầng Dữ liệu & Lưu trữ (Data Layer)"**: Tích hợp Amazon RDS PostgreSQL (Multi-AZ) và Amazon ElastiCache (Redis) nhằm đảm bảo hiệu năng cao và tính sẵn sàng cao (Đồng bộ chéo Cross-AZ) cho ứng dụng bán hàng.
+- **"Tự động hóa & Giám sát (CI/CD & Monitoring)"**: Thiết lập quy trình deploy tự động, bảo mật thông qua AWS CodeDeploy/CodePipeline sử dụng VPC Interface Endpoint, đồng thời cấu hình CloudWatch để theo dõi log ứng dụng và cảnh báo chi phí.
+  ![overview](/images/5-Workshop/5.1-Workshop-overview/VPC_Gateway_Endpoint.png)

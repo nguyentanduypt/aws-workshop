@@ -6,121 +6,89 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# AWS AI Journey – Career Orientation & Cloud Technology Sharing
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+## Event Objectives
 
-### Event Objectives
+The event aimed to provide participants with valuable insights into modern cloud technologies, career development in the AWS ecosystem, and practical experiences shared by industry professionals. It also offered an opportunity to observe the **Cloud Architect Grand Final** of the First Cloud AI Journey program and learn about the latest AI-powered security solutions introduced by AWS.
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+## Speakers
 
-### Speakers
+- Finalist teams of the **Cloud Architect Competition** – First Cloud AI Journey.
+- **Nguyen Tuan Thinh** – DevOps/Cloud Engineer.
+- A Cloud Engineer and alumnus of **Ho Chi Minh City University of Foreign Languages and Information Technology (HUFLIT)**.
+- Administrators of the **First Cloud AI Journey** program.
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+## Event Highlights
 
-### Key Highlights
+### 1. Cloud Architect Grand Final
 
-#### Identifying the drawbacks of legacy application architecture
+The event began with the final round of the Cloud Architect Competition, where the two best teams presented their cloud architecture solutions for real-world business scenarios.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+Each team explained their AWS service selection, system design decisions, scalability strategy, high availability architecture, and cost optimization approach. After each presentation, the judging panel provided detailed feedback on the technical architecture, operational considerations, and presentation skills, helping participants better understand industry best practices.
 
-#### Transitioning to modern application architecture – Microservices
+### 2. AWS Security Agent
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+Mr. Nguyen Tuan Thinh introduced **AWS Security Agent**, a new AI-powered security service designed to enhance cloud security management.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+The presentation covered the service's key capabilities, including vulnerability detection, security analysis, and intelligent recommendations for improving system security. The speaker also discussed both the advantages and limitations of the service, noting that although it significantly automates security analysis, its relatively high deployment cost makes it more suitable for enterprise-scale projects than for personal or small-scale applications.
 
-#### Domain-Driven Design (DDD)
+### 3. Career Development Experience
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+A HUFLIT alumnus currently working as a Cloud Engineer shared his journey from university student to professional cloud engineer.
 
-#### Event-Driven Architecture
+The session focused on practical experiences, including learning strategies, building personal projects, preparing resumes, and overcoming challenges faced during the early stages of a cloud engineering career. These real-world experiences provided valuable guidance and motivation for students preparing to enter the IT industry.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+### 4. AWS Learning Roadmap
 
-#### Compute Evolution
+The administrators of First Cloud AI Journey presented a structured learning roadmap for beginners interested in AWS Cloud.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+The session introduced the fundamental knowledge required before studying AWS, explained how to choose the most suitable AWS certification based on career goals, recommended effective learning methods, and shared useful learning resources, online courses, and hands-on laboratory exercises. Common mistakes made by self-learners were also discussed along with practical suggestions for avoiding them.
 
-#### Amazon Q Developer
+## Knowledge Gained
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+### Cloud Architecture
 
-### Key Takeaways
+- Learned how to design cloud architectures that balance performance, scalability, availability, security, and cost.
+- Understood that presentation and communication skills are just as important as technical knowledge when proposing cloud solutions.
+- Improved system design thinking by analyzing real-world architecture case studies.
 
-#### Design Mindset
+### Cloud Security
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- Gained a better understanding of how artificial intelligence is transforming cloud security.
+- Learned about AWS Security Agent and its ability to automate vulnerability detection and security analysis.
+- Recognized the importance of balancing security effectiveness with implementation costs.
 
-#### Technical Architecture
+### Career Development
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Understood that continuous learning and hands-on project experience are essential for career growth in cloud computing.
+- Realized that a strong portfolio and practical experience significantly improve employment opportunities.
+- Appreciated the importance of communication, teamwork, and presentation skills alongside technical expertise.
 
-#### Modernization Strategy
+### AWS Learning Strategy
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Learned that following a structured learning roadmap is more effective than studying topics randomly.
+- Recognized the value of frequent hands-on laboratory practice for mastering AWS services.
+- Understood that successful AWS certification preparation requires both theoretical knowledge and practical experience.
 
-### Applying to Work
+## Practical Applications
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+The knowledge gained from this event can be applied to future AWS projects by designing more scalable and cost-effective cloud architectures, exploring AI-powered cloud security solutions such as AWS Security Agent, and continuing to build practical cloud projects to strengthen technical skills. In addition, the event helped establish a clearer learning plan for pursuing AWS certifications in the future.
 
-### Event Experience
+## Personal Reflection
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Participating in the **"AWS AI Journey – Career Orientation & Cloud Technology Sharing"** event provided me with valuable practical knowledge about AWS Cloud architecture, cloud security, and career development.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+The most impressive part of the event was the Cloud Architect Grand Final. Observing how each team analyzed business requirements, selected AWS services, and justified their architectural decisions helped me better understand the process of designing a complete cloud solution. The judges' feedback also gave me deeper insights into the criteria used to evaluate cloud architectures in real-world environments.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+The session introducing AWS Security Agent exposed me to one of AWS's latest AI-powered security technologies. I gained a clearer understanding of its advantages, limitations, and potential use cases in enterprise environments.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+The career-sharing session from the HUFLIT alumnus was equally inspiring. It emphasized the importance of continuous learning, building personal projects, and keeping up with emerging technologies. The advice shared during the event has motivated me to continue improving both my technical knowledge and professional skills as I pursue a career in cloud computing.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+## Key Takeaways
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+- A successful cloud architecture should balance business requirements, performance, scalability, security, and cost.
+- Artificial intelligence is becoming an increasingly important component of cloud security solutions.
+- Hands-on practice combined with theoretical learning is the most effective way to develop cloud engineering skills.
+- Following a structured learning roadmap helps achieve career goals more efficiently.
+- In addition to technical expertise, communication, teamwork, and presentation skills are essential qualities for a successful Cloud Engineer.

@@ -6,28 +6,22 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+# Xây dựng Hạ tầng Mạng và CI/CD Tối ưu Chi phí cho Nền tảng E-commerce Thời trang
 
 #### Tổng quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+**AWS VPC Endpoints và PrivateLink** cung cấp kết nối riêng tư, bảo mật trực tiếp từ các tài nguyên trong VPC (như máy chủ ứng dụng Spring Boot ở Private Subnet) đến các dịch vụ AWS mà không cần thông qua Internet công cộng, giúp loại bỏ hoàn toàn chi phí NAT Gateway đắt đỏ.
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+Trong phần Workshop này, bạn sẽ học cách thiết lập và cấu hình hạ tầng mạng Multi-AZ, tối ưu hóa đường truyền dữ liệu cho hệ thống thương mại điện tử thời trang (_Fashion E-commerce Platform_):
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+- **Gateway Endpoint** - Được sử dụng để định tuyến lưu lượng truy cập từ VPC đến **Amazon S3** (lưu trữ hình ảnh sản phẩm) bằng địa chỉ IP nội bộ thông qua bảng định tuyến (Route Tables).
+- **Interface Endpoint** - Được sử dụng cho các dịch vụ CI/CD (như AWS CodeDeploy) để tự động hóa quy trình phát hành mã nguồn vào các máy chủ backend trong Private Subnet một cách bảo mật tuyệt đối.
 
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+1. [Giới thiệu](5.1-Workshop-overview)
+2. [Các bước chuẩn bị](5.2-Prerequiste/)
+3. [Tối ưu hạ tầng mạng](5.3-S3-vpc/)
+4. [Thiết lập Backend & Data Layer](5.4-S3-onprem/)
+5. [CI/CD Tự động hóa](5.5-Policy/)
+6. [Tối ưu hóa chi phí & Giám sát](5.6-Cleanup/)

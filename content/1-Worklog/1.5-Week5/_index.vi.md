@@ -5,55 +5,31 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
+
 {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Bắt đầu chuyển sang giai đoạn phát triển dự án thực tế: Thiết kế Cơ sở dữ liệu cho hệ thống E-commerce.
+- Khởi tạo và xây dựng phần Backend (Spring Boot) và Frontend (React) cùng các API cơ bản.
+- Tham gia các buổi học tập trung tại văn phòng công ty để nâng cao kiến thức Cloud.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                       | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------- |
+| 2   | - Thiết kế quan hệ cơ sở dữ liệu (postgresql) cho dự án E-commerce .                                                                                            | 18/05/2026   | 18/05/2026      |                |
+| 3   | - Khởi tạo project **Backend** (Spring Boot, cấu hình kết nối Database) và project **Frontend** (React, setup giao diện cơ bản).                                | 19/05/2026   | 19/05/2026      |                |
+| 4   | - Viết các API cơ bản phía Backend (CRUD danh mục và sản phẩm) và kết nối thử nghiệm với phía Frontend.                                                         | 20/05/2026   | 20/05/2026      |                |
+| 5   | - **Lên văn phòng công ty:** Lần đầu được duyệt lên công ty, tiếp tục học video trên khóa hoc Cloud nâng cao thông qua video từ Udemy và kênh YouTube AWS FCAJ. | 21/05/2026   | 21/05/2026      |                |
+| 6   | - Tiếp tục hoàn thiện các chức năng cơ bản của hệ thống .                                                                                                       | 22/05/2026   | 22/05/2026      |                |
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thành bộ khung cơ sở dữ liệu chuẩn hóa cho dự án thương mại điện tử.
+- Xây dựng thành công nền móng code cho cả hai phía:
+  - **Backend:** Khởi tạo project Spring Boot và hoàn thiện các API cốt lõi đầu tiên.
+  - **Frontend:** Dựng giao diện cơ bản bằng React và kết nối được dữ liệu từ Backend.
+- Tiếp thu thêm nhiều kiến thức thực tế và cập nhật xu hướng công nghệ qua buổi học tập trung tại văn phòng AWS FCAJ.

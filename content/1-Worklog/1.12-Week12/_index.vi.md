@@ -5,54 +5,25 @@ weight: 2
 chapter: false
 pre: " <b> 1.12 </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 ### Mục tiêu tuần 12:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Tổng kết toàn bộ quá trình thực tập tốt nghiệp 12 tuần tại doanh nghiệp.
+- Hoàn thiện báo cáo thực tập, viết báo cáo đồ án, tìm hiểu về bảo mật đám mây và chuẩn bị nội dung cho buổi Workshop kết thúc.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                         | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------- |
+| 2   | - Tìm hiểu về **Kiro** và cách sử dụng nó cho các dự án cá nhân.                                                                  | 06/07/2026   | 06/07/2026      |                |
+| 3   | - Tìm hiểu về dịch vụ **AWS KMS (Key Management Service)** để quản lý khóa mã hóa và bảo mật dữ liệu trên đám mây.                | 07/07/2026   | 07/07/2026      |                |
+| 4   | - Rà soát và hoàn thiện file Worklog,Event,Workshop trên Hugo server, chuẩn bị tài liệu dự án.                                    | 08/07/2026   | 08/07/2026      |                |
+| 5   | - Tập trung triển khai viết **báo cáo đồ án** chi tiết theo đúng cấu trúc và yêu cầu kỹ thuật của nhà trường.                     | 09/07/2026   | 09/07/2026      |                |
+| 6   | - Tổng hợp lại các kết quả thực hiện, sơ đồ kiến trúc, hình ảnh giao diện hệ thống để tiến hành viết báo cáo thực tập tốt nghiệp. | 10/07/2026   | 10/07/2026      |                |
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thành xuất sắc toàn bộ hồ sơ, báo cáo thực tập tốt nghiệp và **báo cáo đồ án** theo đúng tiến độ yêu cầu.
+- Nắm vững kiến thức về cơ chế mã hóa và bảo mật dữ liệu trên AWS thông qua việc tìm hiểu **AWS KMS**.
+- Tìm hiểu và tiếp thu thêm kiến thức về **Kiro**.
+- Đúc kết được nhiều kiến thức thực tế quý giá về quy trình phát triển phần mềm chuẩn doanh nghiệp, kỹ năng làm chủ các dịch vụ Cloud AWS và vận hành hệ thống .

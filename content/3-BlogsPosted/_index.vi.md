@@ -6,17 +6,9 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}  
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ:
 
-###  [Blog 1 - SESSION POLICIES TRONG AMAZON EKS POD IDENTITY](3.1-Blog1/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+### [Blog 1 - Multi-AZ hay Read Replica? Mình cũng từng nhầm!](3.1-Blog1/)
 
-###  [Blog 2 - ...](3.2-Blog2/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Khi mới học về Amazon RDS, mình từng nghĩ rằng chỉ cần bật Multi-AZ là database vừa có khả năng chống sự cố, vừa tăng tốc độ xử lý nhờ có thêm một bản sao ở Availability Zone khác. Sau khi tìm hiểu kỹ hơn để chuẩn bị cho dự án thực tập, mình mới nhận ra đây là một hiểu lầm khá phổ biến.
+Trong bài viết này, mình sẽ chia sẻ sự khác biệt giữa Multi-AZ và Read Replica bằng một ví dụ quen thuộc về hệ thống bán vé xem phim. Hy vọng nếu bạn cũng đang học AWS hoặc chuẩn bị thi các chứng chỉ như Cloud Practitioner hay Solutions Architect Associate thì bài viết này sẽ giúp bạn tránh được sự nhầm lẫn mà mình từng mắc phải.

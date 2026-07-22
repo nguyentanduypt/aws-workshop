@@ -5,54 +5,28 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Tìm hiểu chi tiết về các loại Load Balancer trên AWS (tập trung vào Application Load Balancer và Network Load Balancer).
+- Nắm vững cơ chế kiểm tra sức khỏe hệ thống (Target Group Health Check).
+- Nghiên cứu cơ chế co giãn tự động bằng Auto Scaling Group (ASG).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                         | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------- |
+| 2   | - Tìm hiểu lý thuyết về **Application Load Balancer (ALB)** và cách định tuyến lưu lượng truy cập tầng ứng dụng .                                                 | 25/05/2026   | 25/05/2026      |                |
+| 3   | - Tìm hiểu cơ chế **Target Group Health Check** để giám sát trạng thái hoạt động của các EC2 Instance phía sau Load Balancer.                                     | 26/05/2026   | 26/05/2026      |                |
+| 4   | - **Lên văn phòng công ty:** Lần thư 2 được duyệt lên công ty, tiếp tục học video trên khóa hoc Cloud thông qua video khoa học từ Udemy và kênh YouTube AWS FCAJ. | 27/05/2026   | 27/05/2026      |                |
+| 5   | - Tìm hiểu về **Network Load Balancer (NLB)** để nắm bắt cơ chế cân bằng tải ở tầng giao vận với hiệu năng xử lý tốc độ cao.                                      | 28/05/2026   | 28/05/2026      |                |
+| 6   | - Cấu hình và thực hành **Auto Scaling Group (ASG)** kết hợp với ALB để hệ thống tự động tăng/giảm server khi lượng truy cập thay đổi.                            | 29/05/2026   | 29/05/2026      |                |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hiểu rõ sự khác biệt và cách sử dụng các loại Load Balancer trên AWS:
+  - Nắm vững cách cấu hình **Application Load Balancer (ALB)** để phân phối request dựa trên HTTP/HTTPS.
+  - Hiểu cách thức hoạt động của **Target Group Health Check** giúp ALB tự động loại bỏ các server đang gặp sự cố.
+  - Phân biệt và nắm được khái niệm về **Network Load Balancer (NLB)** chuyên dùng cho các tác vụ cần tốc độ xử lý siêu nhanh.
+- Cấu hình thành công **Auto Scaling Group (ASG)** giúp hệ thống tự động co giãn số lượng máy chủ linh hoạt theo tải thực tế.
+- Tiếp thu thêm nhiều kiến thức thực tế thông qua buổi học tập trung tại văn phòng AWS FCAJ.
