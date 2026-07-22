@@ -28,3 +28,4 @@ By avoiding complex automated tools, you will gain hands-on experience with core
 5. [Compute & Load Balancing](5.5-compute-load-balancing)
 6. [Frontend Deployment](5.6-frontend-deployment)
 7. [Cost Optimization & Monitoring](5.7-cost-monitoring)
+8. [Project Demonstration & Artifacts](5.8-demo)

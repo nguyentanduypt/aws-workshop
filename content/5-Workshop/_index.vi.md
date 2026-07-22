@@ -28,3 +28,4 @@ Thông qua việc tự thực hiện từng bước thủ công, bạn sẽ nắ
 5. [Tính toán & Cân bằng tải](5.5-compute-load-balancing)
 6. [Triển khai Frontend](5.6-frontend-deployment)
 7. [Tối ưu chi phí & Giám sát](5.7-cost-monitoring)
+8. [Demo Dự Án & Tài Liệu Đính Kèm](5.8-demo)
