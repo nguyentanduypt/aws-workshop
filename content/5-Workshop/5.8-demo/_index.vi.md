@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 5.8. </b> "
 ---
 
-# Demo Dự Án & Tài Liệu Đính Kèm
+<!-- # Demo Dự Án & Tài Liệu Đính Kèm -->
 
 Trong phần tổng kết này, bạn có thể truy cập các video demo trực quan, slide thuyết trình, sơ đồ kiến trúc hệ thống và các tài liệu bàn giao liên quan của **Nền tảng Thương mại Điện tử Thời trang**.
 

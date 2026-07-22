@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 5.8. </b> "
 ---
 
-# Project Demonstration & Artifacts
+<!-- # Project Demonstration & Artifacts -->
 
 In this final section, you can access the visual project demonstrations, presentation slides, architecture diagrams, and related deliverables for the **Fashion E-commerce Platform**.
 
