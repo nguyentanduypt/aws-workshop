@@ -6,24 +6,25 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Secure Hybrid Access to S3 using VPC Endpoints
-
-# Building Cost-Optimized Network Infrastructure and CI/CD for Fashion E-commerce Platform
+# Manual AWS Infrastructure Deployment for Fashion E-commerce Platform
 
 #### Overview
 
-**AWS VPC Endpoints and PrivateLink** provide secure, private connectivity directly from resources within your VPC (such as Spring Boot backend servers in Private Subnets) to AWS services without traversing the Public Internet, completely eliminating expensive NAT Gateway charges.
+In this workshop section, you will learn how to manually build and configure a production-ready, highly available Multi-AZ network and compute infrastructure for the **Fashion E-commerce Platform** in the **Singapore region (ap-southeast-1)**.
 
-In this Workshop section, you will learn how to set up and configure a Multi-AZ network infrastructure, optimizing data transmission paths for the **Fashion E-commerce Platform**:
+By avoiding complex automated tools, you will gain hands-on experience with core AWS components:
 
-- **Gateway Endpoint** - Used to route traffic from your VPC to **Amazon S3** (for product image storage) using private IP addresses via route tables.
-- **Interface Endpoint** - Used for CI/CD services (such as AWS CodeDeploy) to securely automate source code deployment into backend servers located within Private Subnets.
+- **Networking & Security** - Provisioning a custom VPC, 8 multi-tier subnets across 2 Availability Zones, Internet Gateway, Route Tables, and VPC Endpoints for secure private communication.
+- **Data & Caching Layer** - Setting up Amazon RDS Multi-AZ for relational database persistence and Amazon ElastiCache (Redis) for high-performance session and data caching.
+- **Compute & Load Balancing** - Configuring Application Load Balancers (ALB), Target Groups, EC2 Launch Templates, and Auto Scaling Groups (ASG) to handle high-traffic shopping events.
+- **Frontend & Storage** - Deploying static web assets to Amazon S3.
 
-#### Content
+#### Contents
 
-1. [Introduction](5.1-Workshop-overview)
-2. [Prerequisites](5.2-Prerequiste/)
-3. [Network Infrastructure Optimization](5.3-S3-vpc/)
-4. [Backend & Data Layer Setup](5.4-S3-onprem/)
-5. [Automated CI/CD](5.5-Policy/)
-6. [Cost Optimization & Monitoring](5.6-Cleanup/)
+1. [Workshop Overview](5.1-workshop-overview)
+2. [Prerequisites](5.2-prerequisite)
+3. [Networking & Security](5.3-networking-security)
+4. [Data Layer Setup](5.4-data-layer)
+5. [Compute & Load Balancing](5.5-compute-load-balancing)
+6. [Frontend Deployment](5.6-frontend-deployment)
+7. [Cost Optimization & Monitoring](5.7-cost-monitoring)

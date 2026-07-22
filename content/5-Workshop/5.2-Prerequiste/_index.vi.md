@@ -6,9 +6,21 @@ chapter: false
 pre: " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
+#### 1. Tài khoản AWS và Lựa chọn Region
 
-Thêm chính sách quyền IAM tùy chỉnh sau vào tài khoản AWS của bạn để phục vụ việc tự tay triển khai và quản lý hạ tầng cho workshop Fashion E-commerce Platform.
+Trong workshop này, chúng ta sẽ **tự tay triển khai hạ tầng (manual deployment)** thay vì dùng code tự động. Vui lòng đảm bảo bạn có quyền truy cập vào tài khoản AWS.
+
+Chúng ta sẽ thống nhất sử dụng **Region Singapore (ap-southeast-1)** cho toàn bộ hệ thống e-commerce này.
+
+1. Đăng nhập vào [AWS Management Console](https://console.aws.amazon.com/).
+2. Ở góc trên cùng bên phải, nhấp vào menu thả xuống chọn Region.
+3. Chọn **Asia Pacific (Singapore) ap-southeast-1**.
+
+#### 2. Phân quyền IAM (IAM permissions)
+
+Để có thể tạo và xóa tài nguyên một cách trơn tru trong lab này (bao gồm VPC, EC2, ALB, Auto Scaling, RDS, ElastiCache và S3), tài khoản IAM của bạn cần được cấp quyền phù hợp.
+
+Nếu bạn không sử dụng tài khoản có quyền Quản trị viên (AdministratorAccess), hãy thêm chính sách (policy) dạng JSON sau vào user của bạn:
 
 ```
 {
@@ -68,28 +80,3 @@ Thêm chính sách quyền IAM tùy chỉnh sau vào tài khoản AWS của bạ
 }
 
 ```
-
-#### Khởi tạo tài nguyên bằng CloudFormation
-
-Trong lab này, chúng ta sẽ dùng N.Virginia region (us-east-1).
-
-Để chuẩn bị cho môi trường làm workshop, chúng ta deploy CloudFormation template sau (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Để nguyên các lựa chọn mặc định.
-
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack1.png)
-
-- Lựa chọn 2 mục acknowledgement
-- Chọn Create stack
-
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack2.png)
-
-Quá trình triển khai CloudFormation cần khoảng 15 phút để hoàn thành.
-
-![complete](/images/5-Workshop/5.2-Prerequisite/complete.png)
-
-- 2 VPCs đã được tạo
-
-![vpcs](/images/5-Workshop/5.2-Prerequisite/vpcs.png)
-
-- 3 EC2s đã được tạo
-
-![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
